@@ -23,7 +23,9 @@ encrypted before they are included in the repository.
 %package bash-completion
 Summary:        Bash completions for %{name}
 Requires:       bash-completion
+%if 0%{?fedora} || 0%{?suse_version}
 Supplements:    (%{name} and bash-completion)
+%endif
 BuildArch:      noarch
 
 %description bash-completion
@@ -31,7 +33,9 @@ The official bash completion script for %{name}.
 
 %package fish-completion
 Summary:        Fish Completion for %{name}
+%if 0%{?fedora} || 0%{?suse_version}
 Supplements:    (%{name} and fish)
+%endif
 BuildArch:      noarch
 
 %description fish-completion
@@ -39,7 +43,9 @@ The official fish completion script for %{name}.
 
 %package zsh-completion
 Summary:        ZSH Completion for %{name}
+%if 0%{?fedora} || 0%{?suse_version}
 Supplements:    (%{name} and zsh)
+%endif
 BuildArch:      noarch
 
 %description zsh-completion
