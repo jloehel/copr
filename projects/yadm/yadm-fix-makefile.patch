@@ -1,0 +1,13 @@
+Index: yadm-3.3.0/Makefile
+===================================================================
+--- yadm-3.3.0.orig/Makefile
++++ yadm-3.3.0/Makefile
+@@ -199,8 +199,6 @@ install:
+ 		install -d "$$bin" "$$doc" "$$man"                   ;\
+ 		install -m 0755 yadm "$$bin"                         ;\
+ 		install -m 0644 yadm.1 "$$man"                       ;\
+-		install -m 0644 CHANGES CONTRIBUTORS LICENSE "$$doc" ;\
+-		cp -r contrib "$$doc"                                ;\
+ 	}
+ 
+ .PHONY: sync-clock
