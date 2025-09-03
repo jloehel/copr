@@ -66,7 +66,11 @@ install -Dm0644 completion/zsh/_%{name} %{buildroot}%{_datadir}/zsh/site-functio
 
 %files
 %{_bindir}/yadm
-%{_mandir}/man1/%{name}.1%{?ext_man}
+%if 0%{?suse_version}
+%{_mandir}/man1/yadm.1%{?ext_man}
+%else
+%{_mandir}/man1/yadm.1*
+%endif
 %doc CHANGES CONTRIBUTORS contrib/*
 %license LICENSE
 
