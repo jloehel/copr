@@ -9,6 +9,7 @@ Source0:        %{name}-%{version}.tar.gz
 Source99:       %{name}-rpmlintrc
 Patch0:         %{name}-fix-makefile.patch
 Patch1:         %{name}-fix-shebangs.patch
+BuildRequires:  make
 Requires:       bash
 Requires:       git
 BuildArch:      noarch
@@ -79,3 +80,4 @@ install -Dm0644 completion/zsh/_%{name} %{buildroot}%{_datadir}/zsh/site-functio
 %{_datadir}/zsh/
 
 %changelog
+%autochangelog
