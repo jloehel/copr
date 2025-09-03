@@ -9,7 +9,7 @@
 %global python3_pkgversion 3.13
 %define __python /usr/bin/python3.13
 
-Name:           python%{python3_pkgversion}-wheel
+Name:           python-wheel
 Version:        0.45.1
 Release:        %autorelease
 Epoch:          1
