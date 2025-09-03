@@ -1,8 +1,8 @@
-Index: yadm-3.3.0/Makefile
+Index: yadm-3.5.0/Makefile
 ===================================================================
---- yadm-3.3.0.orig/Makefile
-+++ yadm-3.3.0/Makefile
-@@ -199,8 +199,6 @@ install:
+--- yadm-3.5.0.orig/Makefile
++++ yadm-3.5.0/Makefile
+@@ -200,8 +200,6 @@ install:
  		install -d "$$bin" "$$doc" "$$man"                   ;\
  		install -m 0755 yadm "$$bin"                         ;\
  		install -m 0644 yadm.1 "$$man"                       ;\
