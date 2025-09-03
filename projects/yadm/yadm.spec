@@ -84,4 +84,6 @@ install -Dm0644 completion/zsh/_%{name} %{buildroot}%{_datadir}/zsh/site-functio
 %{_datadir}/zsh/
 
 %changelog
-%autochangelog
+* Wed Sep 03 2025 Jürgen Löhel <packaging@loehel.de> - 3.5.0-1
+- Initial commit: v3.5.0
+
